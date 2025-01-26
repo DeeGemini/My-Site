@@ -3,71 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="vibes.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="homebase.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
         <div class="container">
-            <div class="section-heading">
-                <h1>My Projects</h1>
-                <h6>Check out some of my projects</h6>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="images/project1.jpg" alt="Project 1">
-                </div>
-                <div class="portfolio-description">
-                    <h6>Project 1</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec justo tincidunt aliquam. Nulla facilisi. Nullam nec nunc nec justo tincidunt aliquam. Nulla facilisi. Nullam nec nunc nec justo tincidunt aliquam. Nulla facilisi.</p>
-                    <a href="#">View Project</a>
+            <h1 class="heading">Portfolio</h1>
+
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1" class="project-img">
+                <div class="project-description">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec justo tincidunt aliquam. Nulla facilisi.</p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="images/project2.jpg" alt="Project 2">
-                </div>
-                <div class="portfolio-description">
-                    <h6>Project 2</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec justo tincidunt aliquam. Nulla facilisi. Nullam nec nunc nec justo tincidunt aliquam. Nulla facilisi. Nullam nec nunc nec justo tincidunt aliquam. Nulla facilisi.</p>
-                    <a href="#">View Project</a>
+
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2" class="project-img">
+                <div class="project-description">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec justo tincidunt aliquam. Nulla facilisi.</p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <h3>Connect With Me</h3>
-        <div class="social-links">
-            <a href="https://linkedin.com/" target="_blank" title="LinkedIn" rel="noopener">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/" target="_blank" title="GitHub" rel="noopener">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:your-email@example.com" target="_blank" title="Email" rel="noopener">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://x.com/" target="_blank" title="X (Twitter)" rel="noopener">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-        </div>
+    <footer>
         <p>&copy; 2024 Nontuthuzelo Ngwenya. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
