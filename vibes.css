@@ -1,25 +1,35 @@
 /* General Styles */
+
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #39ff14;
+    --tertiary-color: gold;
+    --font-family: 'Montserrat', sans-serif;
+    --line-height: 1.6;
+}
+
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: lightgrey;
-    background-color: #1a1a1a; /* Matte dark dark grey */
-    line-height: 1.6;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    line-height: var(--line-height);
 }
 
 a {
-    color: #39ff14; /* Matte neon green */
+    color: var(--secondary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: gold;
+    color: var(--tertiary-color);
 }
 
 /* Header */
+
 header {
-    background-color: #1a1a1a;
+    background-color: var(--primary-color);
     padding: 1rem 0;
 }
 
@@ -32,35 +42,37 @@ nav ul {
 
 nav ul li a {
     font-weight: bold;
-    color: lightgrey;
+    color: var(--primary-color);
 }
 
 nav ul li a:hover {
-    color: gold;
+    color: var(--tertiary-color);
 }
 
 /* Section Headings */
+
 .section-heading h1 {
     font-size: 2.5rem;
-    color: gold;
+    color: var(--tertiary-color);
     text-align: center;
 }
 
 .section-heading h6 {
-    color: #39ff14;
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 2rem;
 }
 
 /* Landing Section */
+
 .landing-text h1 {
     font-size: 3rem;
-    color: gold;
+    color: var(--tertiary-color);
 }
 
 .landing-text h2 {
     font-size: 2rem;
-    color: #39ff14;
+    color: var(--secondary-color);
 }
 
 .landing-text p {
@@ -70,8 +82,8 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #39ff14;
-    color: #1a1a1a;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
@@ -79,33 +91,35 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: gold;
-    color: #1a1a1a;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 /* Footer */
+
 footer {
-    background-color: #121212;
+    background-color: var(--primary-color);
     padding: 2rem 0;
     text-align: center;
 }
 
 footer h3 {
-    color: gold;
+    color: var(--tertiary-color);
     margin-bottom: 1rem;
 }
 
 .social-links a {
     font-size: 1.5rem;
     margin: 0 0.5rem;
-    color: lightgrey;
+    color: var(--primary-color);
 }
 
 .social-links a:hover {
-    color: gold;
+    color: var(--tertiary-color);
 }
 
 /* Contact Section */
+
 .contact-details p {
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -114,3 +128,4 @@ footer h3 {
 .contact-details a {
     font-weight: bold;
 }
+
