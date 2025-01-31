@@ -1,49 +1,66 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Nontuthuzelo Ngwenya</title>
     <link rel="stylesheet" href="../vibes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="homebase.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Contact Me</h1>
-                <h6>Let's Get in Touch</h6>
-            </div>
-            <div class="contact-details">
-                <p>Email: <a href="mailto:nicsadyngwenya@gmail.com">nicsadyngwenya@gmail.com</a></p>
-                <p>
-                    LinkedIn: <a href="https://www.linkedin.com/in/nontuthuzelo-ngwenya-0b1b3b1b3/" target="_blank" rel="noopener">View My LinkedIn</a>
-                </p>
-                <p>
-                    GitHub: <a href="https://github.com/DeeGemini" target="_blank" rel="noopener">View My GitHub</a>
-                </p>
-                <p>
-                    Resume: <a href="assets/Nontuthuzelo Ngweya Resume.pdf" target="_blank" rel="noopener">Download My Resume</a>
-                </p>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-n"></i>
+                    <div class="logo-text">Nontuthuzelo Ngwenya</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="homebase.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Contact Me</h1>
+                    <p>Feel free to reach out through the form below or connect with me on my social platforms.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://twitter.com/radikalchic" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> X</a>
+                    <a href="https://linkedin.com/in/radikalchic" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://DeeGemini@github.com/radikalchic" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="mailto:nicsadyngwenya@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2024 Nontuthuzelo Ngwenya. All Rights Reserved.</p>
-    </footer>
-
-    <script src="../flow.js"></script>
+     </div>
 </body>
 </html>
+
 
