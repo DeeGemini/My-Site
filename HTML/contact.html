@@ -72,12 +72,19 @@
             nav.classList.toggle("open");
         })
 
-        var typed=new Typed(".input",{
-            strings:["Software Engineer","Backend Developer","UX Designer","Mobile Developer","Web Developer"],
-            typedSpeed:70,
-            backSpeed:55,
-            loop:true
-        })
+        // contact.js
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Contact page loaded");
+
+            const contactForm = document.querySelector("#contact-form");
+            if (contactForm) {
+                contactForm.addEventListener("submit", (event) => {
+                    event.preventDefault();
+                    alert("Message sent successfully!");
+                    contactForm.reset();
+                })
+            }
+        }) 
      </script>
 </body>
 </html>
