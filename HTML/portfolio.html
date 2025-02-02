@@ -36,26 +36,28 @@
                     <h1>My Portfolio</h1>
                     <p>Explore some of my latest projects below.</p>
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h2>MultiDevice Call Tool</h2>
-                        <p>This is a tool designed to provide users with the flexibility to use a single phone number across multiple devices.</p>
-                        <a href="https://github.com/radikalchic/MultiDeviceCallTool" target="_blank" rel="noopener">Source Code</a>
-                    </div>
-                    <div class="project-card">
-                        <h2>E-Pulse Mobile App</h2>
-                        <p>A wallpaper mobile application with event reminders appearing on the mobile lock-screen.</p>
-                        <a href="https://github.com/radikalchic/E-Pulse_App" target="_blank" rel="noopener">Source Code</a>
-                    </div>
-                    <div class="project-card">
-                        <h2>Budget Buddy</h2>
-                        <p>A web application that helps manage your finances with ease.</p>
-                        <a href="https://github.com/radikalchic/BudgetBuddy" target="_blank" rel="noopener">Source Code</a>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <h2>MultiDevice Call Tool</h2>
+                            <p>This is a tool designed to provide users with the flexibility to use a single phone number across multiple devices.</p>
+                            <a href="https://github.com/radikalchic/MultiDeviceCallTool" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>E-Pulse Mobile App</h2>
+                            <p>A wallpaper mobile application with event reminders appearing on the mobile lock-screen.</p>
+                            <a href="https://github.com/radikalchic/E-Pulse_App" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Budget Buddy</h2>
+                            <p>A web application that helps manage your finances with ease.</p>
+                            <a href="https://github.com/radikalchic/BudgetBuddy" target="_blank" rel="noopener">Source Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-     </div>
+    </div>
      <!---typed js for typing text effect-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
      <script>
@@ -71,7 +73,20 @@
 
         // portfolio.js
         document.addEventListener("DOMContentLoaded", () => {
-            console.log("Portfolio page loaded");
+        console.log("Portfolio page loaded");
+
+        let angle = 0;
+        const carousel = document.querySelector(".carousel");
+        const interval = setInterval(() => {
+            angle -= 120; // Rotate 120° per step
+            carousel.style.transform = `rotateY(${angle}deg)`;
+        }, 4000); // Change slide every 4 seconds
+
+        // Add manual click control
+        document.querySelector(".carousel-container").addEventListener("click", () => {
+            angle -= 120;
+            carousel.style.transform = `rotateY(${angle}deg)`;
+        })
         })
      </script>
 </body>
