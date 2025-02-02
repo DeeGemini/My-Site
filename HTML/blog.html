@@ -35,36 +35,33 @@
                     <h1>Welcome to My Blog</h1>
                     <p>Here, I share my thoughts on coding, personal experiences, and tech insights.</p>
                 </div>
-                <div class="blog-grid">
-                        <div class="blog-thumbnail">
-                            <img src="../images/blog-placeholder.jpg" alt="Blog Thumbnail">
-                        </div>
-                        <div class="blog-title">Visit My Hashnode Blog</div>
-                    </a>
-                    <a href="#" class="blog-item">
-                        <div class="blog-thumbnail">
-                            <img src="../images/blog1.jpg" alt="Blog 1 Thumbnail">
-                        </div>
-                        <div class="blog-title">The First Programmer Was a Woman</div>
-                    </a>
-                    <a href="#" class="blog-item">
-                        <div class="blog-thumbnail">
-                            <img src="../images/blog2.jpg" alt="Blog 2 Thumbnail">
-                        </div>
-                        <div class="blog-title">Starting Personal Branding as an Introverted Programmer</div>
-                    </a>
-                    <a href="#" class="blog-item">
-                        <div class="blog-thumbnail">
-                            <img src="../images/blog3.jpg" alt="Blog 3 Thumbnail">
-                        </div>
-                        <div class="blog-title">Why I Stopped Trying to Be a 10x Developer</div>
-                    </a>
-                    <a href="#" class="blog-item">
-                        <div class="blog-thumbnail">
-                            <img src="../images/blog4.jpg" alt="Blog 4 Thumbnail">
-                        </div>
-                        <div class="blog-title">Lessons from My First Software Project</div>
-                    </a>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <a href="#" class="carousel-item">
+                            <div class="blog-thumbnail">
+                                <img src="../images/blog1.jpg" alt="Blog 1 Thumbnail">
+                            </div>
+                            <div class="blog-title">The First Programmer Was a Woman</div>
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <div class="blog-thumbnail">
+                                <img src="../images/blog2.jpg" alt="Blog 2 Thumbnail">
+                            </div>
+                            <div class="blog-title">Starting Personal Branding as an Introverted Programmer</div>
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <div class="blog-thumbnail">
+                                <img src="../images/blog3.jpg" alt="Blog 3 Thumbnail">
+                            </div>
+                            <div class="blog-title">Why I Stopped Trying to Be a 10x Developer</div>
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <div class="blog-thumbnail">
+                                <img src="../images/blog4.jpg" alt="Blog 4 Thumbnail">
+                            </div>
+                            <div class="blog-title">Lessons from My First Software Project</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,6 +82,18 @@
         // blog.js
         document.addEventListener("DOMContentLoaded", () => {
             console.log("Blog page loaded");
+
+            let angle = 0;
+            const carousel = document.querySelector(".carousel");
+            const interval = setInterval(() => {
+                angle -= 90;
+                carousel.style.transform = `rotateY(${angle}deg)`;
+            }, 4000);
+
+            document.querySelector(".carousel-container").addEventListener("click", () => {
+                angle -= 90;
+                carousel.style.transform = `rotateY(${angle}deg)`;
+            })
         })
      </script>
 </body>
