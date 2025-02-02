@@ -378,7 +378,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -387,7 +386,6 @@ body {
     width: 80%;
     max-width: 1000px;
 }
-
 .profile-pic {
     width: 200px;
     height: 200px;
@@ -395,18 +393,15 @@ body {
     object-fit: cover;
     margin-right: 40px;
 }
-
 .contact-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 .contact-text {
     font-size: 18px;
     margin-bottom: 20px;
 }
-
 .contact-form {
     background: #333;
     padding: 20px;
@@ -416,7 +411,6 @@ body {
     max-width: 500px;
     margin-top: 20px;
 }
-
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -425,7 +419,6 @@ body {
     border: none;
     border-radius: 5px;
 }
-
 .contact-form button {
     padding: 10px 20px;
     background: #007ced;
@@ -434,20 +427,17 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .social-icons {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
-
 .social-icons a {
     color: white;
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
 }
-
 .social-icons a:hover {
     color: #1da1f2; /* Example: Twitter blue */
 }
