@@ -124,6 +124,14 @@ nav .navlinks li a{
     color:#e5e5e5;
 
 }
+.hero-pic {
+    position: relative;
+    display: inline-block;
+}
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+}
 .btn-group{
     margin:45px 0;
 }
@@ -431,15 +439,61 @@ body {
     cursor: pointer;
 }
 .social-icons {
+    position: absolute;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent icons from blocking the image */
+    animation: rotate 10s infinite linear;
+    transform-style: preserve-3d;
 }
 .social-icons a {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #007ced;
     color: white;
     margin: 0 10px;
     font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    transform-style: preserve-3d;
+}
+.social-icons a:nth-child(1) {
+    transform: rotateY(0deg) translateZ(150px);
+}
+
+.social-icons a:nth-child(2) {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.social-icons a:nth-child(3) {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.social-icons a:nth-child(4) {
+    transform: rotateY(270deg) translateZ(150px);
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotateY(360deg);
+    }
 }
 .social-icons a:hover {
     color: #1da1f2; /* Example: Twitter blue */
