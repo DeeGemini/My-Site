@@ -151,6 +151,9 @@ nav .navlinks li a{
     color:#007ced;
     transform: rotate(360deg);
 }
+.spaced {
+    margin-bottom: 1em; /* Adjust the value as needed */
+}
 /* Respnosiv design & displaying navbar for small screen */
 @media(max-width:930px)
 {
